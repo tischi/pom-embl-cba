@@ -9,9 +9,9 @@
 	</parent>
 
 	<artifactId>pom-embl-cba</artifactId>
-	<version>0.1.00</version>
+	<version>0.1.01</version>
 
-	<name>EMBL BCA Parent Pom</name>
+	<name>EMBL CBA Parent Pom</name>
 	<url>https://github.com/tischi/pom-embl-cba</url>
 	<description>This POM provides a parent for EMBL-CBA projects</description>
 	<inceptionYear>2019</inceptionYear>
@@ -71,17 +71,27 @@
 	<properties>
 		<license.licenseName>bsd_2</license.licenseName>
 		<license.copyrightOwners>EMBL</license.copyrightOwners>
+
 		<fiji-plugin-plateViewer.version>0.2.22</fiji-plugin-plateViewer.version>
-		<fiji-plugin-platynereisViewer.version>0.0.00<fiji-plugin-platynereisViewer.version>
-		<bdv-utils.version>0.2.14</bdv-utils.version>
-		<transforms-utils.version>0.0.00</transforms-utils.version>
+		<fiji-plugin-platynereisViewer.version>0.0.00</fiji-plugin-platynereisViewer.version>
+		<bdv-utils.version>0.2.16</bdv-utils.version>
+		<transforms-utils.version>0.2.01</transforms-utils.version>
 		<image-transform-converters.version>0.0.00</image-transform-converters.version>
-		<table-utils.version>0.0.00</table-utils.version>
+		<table-utils.version>0.3.11</table-utils.version>
 		<imaris-writer.version>0.0.00</imaris-writer.version>
 		<classifiers.version>0.0.00</classifiers.version>
 		<imglib2-lazy-algorithm.version>0.0.00</imglib2-lazy-algorithm.version>
-		<bigdataviewer-vistools.version>1.0.0-beta-12</bigdataviewer-vistools>
-    	</properties>
+		<bigdataviewer-vistools.version>1.0.0-beta-12</bigdataviewer-vistools.version>
+	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>bintray-tischi-snapshots</id>
+			<name>tischi-snapshots</name>
+			<url>https://api.bintray.com/maven/tischi/snapshots/pom-embl-cba/;publish=1</url>
+		</repository>
+	</distributionManagement>
+
 
 </project>
 
