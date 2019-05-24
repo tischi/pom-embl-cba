@@ -8,6 +8,8 @@
 		<version>26.0.0</version>
 	</parent>
 
+	<packaging>pom</packaging>
+	<groupId>de.embl.cba</groupId>
 	<artifactId>pom-embl-cba</artifactId>
 	<version>0.1.01</version>
 
@@ -72,16 +74,16 @@
 		<license.licenseName>bsd_2</license.licenseName>
 		<license.copyrightOwners>EMBL</license.copyrightOwners>
 
-		<fiji-plugin-plateViewer.version>0.2.22</fiji-plugin-plateViewer.version>
+		<fiji-plugin-plateViewer.version>0.2.23</fiji-plugin-plateViewer.version>
 		<fiji-plugin-platynereisViewer.version>0.0.00</fiji-plugin-platynereisViewer.version>
 		<bdv-utils.version>0.2.16</bdv-utils.version>
 		<transforms-utils.version>0.2.01</transforms-utils.version>
-		<image-transform-converters.version>0.0.00</image-transform-converters.version>
+		<image-transform-converters.version>0.0.2</image-transform-converters.version>
 		<table-utils.version>0.3.11</table-utils.version>
-		<imaris-writer.version>0.0.00</imaris-writer.version>
-		<classifiers.version>0.0.00</classifiers.version>
+		<classifiers.version>0.1.03</classifiers.version>
 		<imglib2-lazy-algorithm.version>0.0.00</imglib2-lazy-algorithm.version>
 		<bigdataviewer-vistools.version>1.0.0-beta-12</bigdataviewer-vistools.version>
+		<imaris-writer.version>0.1.02</imaris-writer.version>
 	</properties>
 
 	<distributionManagement>
@@ -92,6 +94,40 @@
 		</repository>
 	</distributionManagement>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>de.embl.cba</groupId>
+				<artifactId>bdv-utils</artifactId>
+				<version>${bdv-utils.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.embl.cba</groupId>
+				<artifactId>table-utils</artifactId>
+				<version>${table-utils.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.embl.cba</groupId>
+				<artifactId>imaris-writer</artifactId>
+				<version>${imaris-writer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.embl.cba</groupId>
+				<artifactId>classifiers</artifactId>
+				<version>${classifiers.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.embl.cba</groupId>
+				<artifactId>imglib2-lazy-algorithm</artifactId>
+				<version>${imglib2-lazy-algorithm.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.embl.cba</groupId>
+				<artifactId>transforms-utils</artifactId>
+				<version>${transforms-utils.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 </project>
 
