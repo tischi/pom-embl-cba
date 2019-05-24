@@ -72,6 +72,15 @@
 		<license.licenseName>bsd_2</license.licenseName>
 		<license.copyrightOwners>EMBL</license.copyrightOwners>
 		<fiji-plugin-plateViewer.version>0.2.22</fiji-plugin-plateViewer.version>
+		<fiji-plugin-platynereisViewer.version>0.0.00<fiji-plugin-platynereisViewer.version>
+		<bdv-utils.version>0.2.14</bdv-utils.version>
+		<transforms-utils.version>0.0.00</transforms-utils.version>
+		<image-transform-converters.version>0.0.00</image-transform-converters.version>
+		<table-utils.version>0.0.00</table-utils.version>
+		<imaris-writer.version>0.0.00</imaris-writer.version>
+		<classifiers.version>0.0.00</classifiers.version>
+		<imglib2-lazy-algorithm.version>0.0.00</imglib2-lazy-algorithm.version>
+		<bigdataviewer-vistools.version>1.0.0-beta-12</bigdataviewer-vistools>
     	</properties>
 
 </project>
