@@ -130,11 +130,6 @@
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
-				<artifactId>fiji-plugin-bigDataProcessor2</artifactId>
-				<version>${fiji-plugin-bigDataProcessor2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>de.embl.cba</groupId>
 				<artifactId>bdv-utils</artifactId>
 				<version>${bdv-utils.version}</version>
 			</dependency>
