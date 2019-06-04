@@ -8,10 +8,10 @@
 		<version>26.0.0</version>
 	</parent>
 
-	<packaging>pom</packaging>
 	<groupId>de.embl.cba</groupId>
 	<artifactId>pom-embl-cba</artifactId>
-	<version>0.1.01</version>
+	<version>0.3.01</version>
+	<packaging>pom</packaging>
 
 	<name>EMBL CBA Parent Pom</name>
 	<url>https://github.com/tischi/pom-embl-cba</url>
@@ -77,12 +77,13 @@
 		<fiji-plugin-plateViewer.version>0.2.23</fiji-plugin-plateViewer.version>
 		<fiji-plugin-platynereisViewer.version>0.4.19</fiji-plugin-platynereisViewer.version>
 		<fiji-plugin-morphometry.version>0.4.14</fiji-plugin-morphometry.version>
-		<fiji-plugin-bigDataProcessor2.version>0.2.11</fiji-plugin-bigDataProcessor2.version>
+		<fiji_plugin_bigDataProcessor.version>0.6.00</fiji_plugin_bigDataProcessor.version>
+		<fiji-plugin-bigDataProcessor2.version>0.2.12</fiji-plugin-bigDataProcessor2.version>
 
 		<bdv-utils.version>0.2.16</bdv-utils.version>
 		<table-utils.version>0.3.12</table-utils.version>
 		<transforms-utils.version>0.2.01</transforms-utils.version>
-		<image-transform-converters.version>0.0.3</image-transform-converters.version>
+		<image-transform-converters.version>0.1.00</image-transform-converters.version>
 		<classifiers.version>0.1.03</classifiers.version>
 		<imglib2-lazy-algorithm.version>0.1.03</imglib2-lazy-algorithm.version>
 		<bigdataviewer-vistools.version>1.0.0-beta-12</bigdataviewer-vistools.version>
@@ -109,6 +110,19 @@
 				<artifactId>fiji-plugin-platynereisViewer</artifactId>
 				<version>${fiji-plugin-platynereisViewer.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>de.embl.cba</groupId>
+				<artifactId>fiji-plugin-bigDataProcessor2</artifactId>
+				<version>${fiji-plugin-bigDataProcessor2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.embl.cba</groupId>
+				<artifactId>fiji_plugin_bigDataProcessor</artifactId>
+				<version>${fiji_plugin_bigDataProcessor.version}</version>
+			</dependency>
+
+
+
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>fiji-plugin-morphometry</artifactId>
