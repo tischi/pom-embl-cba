@@ -76,7 +76,7 @@
 
 		<fiji-plugin-plateViewer.version>0.2.23</fiji-plugin-plateViewer.version>
 		<fiji-plugin-platynereisViewer.version>0.4.19</fiji-plugin-platynereisViewer.version>
-		<fiji-plugin-morphometry.version>0.4.14</fiji-plugin-morphometry.version>
+		<fiji-plugin-morphometry.version>0.4.15</fiji-plugin-morphometry.version>
 		<fiji_plugin_bigDataProcessor.version>0.6.00</fiji_plugin_bigDataProcessor.version>
 		<fiji-plugin-bigDataProcessor2.version>0.2.12</fiji-plugin-bigDataProcessor2.version>
 
@@ -100,6 +100,9 @@
 
 	<dependencyManagement>
 		<dependencies>
+
+			<!--	Plugins		-->
+
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>fiji-plugin-plateViewer</artifactId>
@@ -120,14 +123,15 @@
 				<artifactId>fiji_plugin_bigDataProcessor</artifactId>
 				<version>${fiji_plugin_bigDataProcessor.version}</version>
 			</dependency>
-
-
-
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>fiji-plugin-morphometry</artifactId>
 				<version>${fiji-plugin-morphometry.version}</version>
 			</dependency>
+
+
+			<!--	Libraries		-->
+
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>bdv-utils</artifactId>
