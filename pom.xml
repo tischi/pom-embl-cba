@@ -88,6 +88,7 @@
 		<imglib2-lazy-algorithm.version>0.1.03</imglib2-lazy-algorithm.version>
 		<bigdataviewer-vistools.version>1.0.0-beta-12</bigdataviewer-vistools.version>
 		<imaris-writer.version>0.1.02</imaris-writer.version>
+		<fiji-slurm.version>0.5.00</fiji-slurm.version>
 	</properties>
 
 	<distributionManagement>
@@ -166,6 +167,11 @@
 				<groupId>org.itc</groupId>
 				<artifactId>image-transform-converters</artifactId>
 				<version>${image-transform-converters.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.embl.cba</groupId>
+				<artifactId>fiji-slurm</artifactId>
+				<version>${fiji-slurm.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
