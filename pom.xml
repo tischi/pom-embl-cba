@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
 		<version>26.0.0</version>
 	</parent>
-
 	<groupId>de.embl.cba</groupId>
 	<artifactId>pom-embl-cba</artifactId>
-	<version>0.3.01</version>
+	<version>0.3.4</version>
 	<packaging>pom</packaging>
-
 	<name>EMBL CBA Parent Pom</name>
 	<url>https://github.com/tischi/pom-embl-cba</url>
 	<description>This POM provides a parent for EMBL-CBA projects</description>
@@ -27,7 +24,6 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-
 	<developers>
 		<developer>
 			<id>tischi</id>
@@ -47,15 +43,12 @@
 			<name>TODO</name>
 		</contributor>
 	</contributors>
-
 	<mailingLists>
 		<mailingList>
 			<name>ImageJ Forum</name>
 			<archive>http://forum.imagej.net/</archive>
 		</mailingList>
 	</mailingLists>
-
-
 	<scm>
 		<connection>scm:git:git://github.com/tischi/pom-embl-cba</connection>
 		<developerConnection>scm:git:git@github.com/tischi/pom-embl-cba</developerConnection>
@@ -69,28 +62,26 @@
 	<ciManagement>
 		<system>None</system>
 	</ciManagement>
-
 	<properties>
 		<license.licenseName>bsd_2</license.licenseName>
 		<license.copyrightOwners>EMBL</license.copyrightOwners>
-
-		<fiji-plugin-plateViewer.version>0.2.23</fiji-plugin-plateViewer.version>
-		<fiji-plugin-platynereisViewer.version>0.4.19</fiji-plugin-platynereisViewer.version>
-		<fiji-plugin-morphometry.version>0.4.15</fiji-plugin-morphometry.version>
-		<fiji_plugin_bigDataProcessor.version>0.6.00</fiji_plugin_bigDataProcessor.version>
-		<fiji-plugin-bigDataProcessor2.version>0.2.12</fiji-plugin-bigDataProcessor2.version>
-
-		<bdv-utils.version>0.2.16</bdv-utils.version>
-		<table-utils.version>0.3.12</table-utils.version>
-		<transforms-utils.version>0.2.01</transforms-utils.version>
-		<image-transform-converters.version>0.1.00</image-transform-converters.version>
-		<classifiers.version>0.1.03</classifiers.version>
-		<imglib2-lazy-algorithm.version>0.1.03</imglib2-lazy-algorithm.version>
-		<bigdataviewer-vistools.version>1.0.0-beta-12</bigdataviewer-vistools.version>
-		<imaris-writer.version>0.1.02</imaris-writer.version>
-		<fiji-slurm.version>0.5.00</fiji-slurm.version>
+		<!-- EMBL-CBA: latest versions are auto-fetched from projects, running /update_pom.py -->
+		<fiji-plugin-plateViewer.version.auto>0.2.23</fiji-plugin-plateViewer.version.auto>
+		<fiji-plugin-platynereisViewer.version.auto>0.4.19</fiji-plugin-platynereisViewer.version.auto>
+		<fiji-plugin-morphometry.version.auto>0.4.15</fiji-plugin-morphometry.version.auto>
+		<fiji_plugin_bigDataProcessor.version.auto>0.6.00</fiji_plugin_bigDataProcessor.version.auto>
+		<fiji-plugin-bigDataProcessor2.version.auto>0.2.12</fiji-plugin-bigDataProcessor2.version.auto>
+		<bdv-utils.version.auto>0.2.16</bdv-utils.version.auto>
+		<table-utils.version.auto>0.3.12</table-utils.version.auto>
+		<transforms-utils.version.auto>0.2.01</transforms-utils.version.auto>
+		<image-transform-converters.version.auto>0.1.00</image-transform-converters.version.auto>
+		<classifiers.version.auto>0.1.03</classifiers.version.auto>
+		<imglib2-lazy-algorithm.version.auto>0.1.03</imglib2-lazy-algorithm.version.auto>
+		<imaris-writer.version.auto>0.1.02</imaris-writer.version.auto>
+		<fiji-slurm.version.auto>0.5.00</fiji-slurm.version.auto>
+		<!-- Manually managed versions -->
+		<bigdataviewer-vistools.version>1.0.0-beta-14-SNAPSHOT</bigdataviewer-vistools.version>
 	</properties>
-
 	<distributionManagement>
 		<repository>
 			<id>bintray-tischi-snapshots</id>
@@ -98,83 +89,75 @@
 			<url>https://api.bintray.com/maven/tischi/snapshots/pom-embl-cba/;publish=1</url>
 		</repository>
 	</distributionManagement>
-
 	<dependencyManagement>
 		<dependencies>
-
 			<!--	Plugins		-->
-
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>fiji-plugin-plateViewer</artifactId>
-				<version>${fiji-plugin-plateViewer.version}</version>
+				<version>${fiji-plugin-plateViewer.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>fiji-plugin-platynereisViewer</artifactId>
-				<version>${fiji-plugin-platynereisViewer.version}</version>
+				<version>${fiji-plugin-platynereisViewer.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>fiji-plugin-bigDataProcessor2</artifactId>
-				<version>${fiji-plugin-bigDataProcessor2.version}</version>
+				<version>${fiji-plugin-bigDataProcessor2.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>fiji_plugin_bigDataProcessor</artifactId>
-				<version>${fiji_plugin_bigDataProcessor.version}</version>
+				<version>${fiji_plugin_bigDataProcessor.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>fiji-plugin-morphometry</artifactId>
-				<version>${fiji-plugin-morphometry.version}</version>
+				<version>${fiji-plugin-morphometry.version.auto}</version>
 			</dependency>
-
-
 			<!--	Libraries		-->
-
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>bdv-utils</artifactId>
-				<version>${bdv-utils.version}</version>
+				<version>${bdv-utils.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>table-utils</artifactId>
-				<version>${table-utils.version}</version>
+				<version>${table-utils.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>imaris-writer</artifactId>
-				<version>${imaris-writer.version}</version>
+				<version>${imaris-writer.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>classifiers</artifactId>
-				<version>${classifiers.version}</version>
+				<version>${classifiers.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>imglib2-lazy-algorithm</artifactId>
-				<version>${imglib2-lazy-algorithm.version}</version>
+				<version>${imglib2-lazy-algorithm.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>transforms-utils</artifactId>
-				<version>${transforms-utils.version}</version>
+				<version>${transforms-utils.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.itc</groupId>
 				<artifactId>image-transform-converters</artifactId>
-				<version>${image-transform-converters.version}</version>
+				<version>${image-transform-converters.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>fiji-slurm</artifactId>
-				<version>${fiji-slurm.version}</version>
+				<version>${fiji-slurm.version.auto}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
 </project>
-
