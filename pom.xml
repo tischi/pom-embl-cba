@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>26.0.0</version>
+		<version>27.0.1</version>
 	</parent>
 	<groupId>de.embl.cba</groupId>
 	<artifactId>pom-embl-cba</artifactId>
@@ -70,19 +70,19 @@
 		<fiji-plugin-platynereisViewer.version.auto>0.4.19</fiji-plugin-platynereisViewer.version.auto>
 		<fiji-plugin-morphometry.version.auto>0.4.15</fiji-plugin-morphometry.version.auto>
 		<fiji_plugin_bigDataProcessor.version.auto>0.6.00</fiji_plugin_bigDataProcessor.version.auto>
-		<fiji-plugin-bigDataProcessor2.version.auto>0.2.13</fiji-plugin-bigDataProcessor2.version.auto>
-		<fiji-plugin-elastixWrapper.version.auto>0.3.12</fiji-plugin-elastixWrapper.version.auto>
+		<fiji-plugin-bigDataProcessor2.version.auto>0.2.14</fiji-plugin-bigDataProcessor2.version.auto>
+		<fiji-plugin-elastixWrapper.version.auto>0.3.13</fiji-plugin-elastixWrapper.version.auto>
 
 		<bdv-utils.version.auto>0.2.16</bdv-utils.version.auto>
-		<table-utils.version.auto>0.3.12</table-utils.version.auto>
+		<table-utils.version.auto>0.3.14</table-utils.version.auto>
 		<transforms-utils.version.auto>0.2.01</transforms-utils.version.auto>
 		<image-transform-converters.version.auto>0.1.00</image-transform-converters.version.auto>
 		<classifiers.version.auto>0.1.03</classifiers.version.auto>
 		<imglib2-lazy-algorithm.version.auto>0.1.03</imglib2-lazy-algorithm.version.auto>
-		<imaris-writer.version.auto>0.1.02</imaris-writer.version.auto>
+		<imaris-writer.version.auto>0.1.03</imaris-writer.version.auto>
 		<fiji-slurm.version.auto>0.5.00</fiji-slurm.version.auto>
 		<!-- Manually managed versions -->
-		<bigdataviewer-vistools.version>1.0.0-beta-17-SNAPSHOT</bigdataviewer-vistools.version>
+		<bigdataviewer-vistools.version>1.0.0-beta-18-SNAPSHOT</bigdataviewer-vistools.version>
 		<bigdataviewer-core.version>7.0.1-SNAPSHOT</bigdataviewer-core.version>
 	</properties>
 	<distributionManagement>
