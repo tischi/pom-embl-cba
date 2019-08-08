@@ -8,7 +8,7 @@
 	</parent>
 	<groupId>de.embl.cba</groupId>
 	<artifactId>pom-embl-cba</artifactId>
-	<version>0.3.5</version>
+	<version>0.3.6</version>
 	<packaging>pom</packaging>
 	<name>EMBL CBA Parent Pom</name>
 	<url>https://github.com/tischi/pom-embl-cba</url>
@@ -67,14 +67,15 @@
 		<license.copyrightOwners>EMBL</license.copyrightOwners>
 		<!-- EMBL-CBA: latest versions are auto-fetched from projects, running /update_pom.py -->
 		<fiji-plugin-plateViewer.version.auto>0.2.23</fiji-plugin-plateViewer.version.auto>
-		<fiji-plugin-platynereisViewer.version.auto>0.4.19</fiji-plugin-platynereisViewer.version.auto>
-		<fiji-plugin-morphometry.version.auto>0.4.15</fiji-plugin-morphometry.version.auto>
+		<fiji-plugin-platynereisViewer.version.auto>0.4.21</fiji-plugin-platynereisViewer.version.auto>
+		<fiji-plugin-morphometry.version.auto>0.4.16</fiji-plugin-morphometry.version.auto>
 		<fiji_plugin_bigDataProcessor.version.auto>0.6.00</fiji_plugin_bigDataProcessor.version.auto>
 		<fiji-plugin-bigDataProcessor2.version.auto>0.2.14</fiji-plugin-bigDataProcessor2.version.auto>
 		<fiji-plugin-elastixWrapper.version.auto>0.3.13</fiji-plugin-elastixWrapper.version.auto>
+		<fiji_plugin_cats.version.auto>0.6.9</fiji_plugin_cats.version.auto>
 
 		<bdv-utils.version.auto>0.2.16</bdv-utils.version.auto>
-		<table-utils.version.auto>0.3.14</table-utils.version.auto>
+		<table-utils.version.auto>0.3.15</table-utils.version.auto>
 		<transforms-utils.version.auto>0.2.01</transforms-utils.version.auto>
 		<image-transform-converters.version.auto>0.1.00</image-transform-converters.version.auto>
 		<classifiers.version.auto>0.1.03</classifiers.version.auto>
@@ -123,7 +124,12 @@
 			<dependency>
 				<groupId>de.embl.cba</groupId>
 				<artifactId>fiji-plugin-elastixWrapper</artifactId>
-				<version>${fiji-plugin-elastixWrapper.version.auto.version.auto}</version>
+				<version>${fiji-plugin-elastixWrapper.version.auto}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.embl.cba</groupId>
+				<artifactId>fiji_plugin_cats</artifactId>
+				<version>${fiji_plugin_cats.version.auto}</version>
 			</dependency>
 			<!--	Libraries		-->
 			<dependency>
