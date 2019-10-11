@@ -72,7 +72,7 @@
 		<fiji-plugin-bigDataProcessor.version.auto>0.7.0</fiji-plugin-bigDataProcessor.version.auto>
 		<fiji-plugin-bigDataProcessor2.version.auto>0.3.7</fiji-plugin-bigDataProcessor2.version.auto>
 		<fiji-plugin-elastixWrapper.version.auto>0.4.1</fiji-plugin-elastixWrapper.version.auto>
-		<fiji_plugin_cats.version.auto>0.7.1</fiji_plugin_cats.version.auto>
+		<fiji-plugin-cats.version.auto>0.7.1</fiji-plugin-cats.version.auto>
 		<fiji-plugin-multiTemplateMatching.version.auto>0.4.0</fiji-plugin-multiTemplateMatching.version.auto>
 		<bdv-utils.version.auto>0.2.19</bdv-utils.version.auto>
 		<table-utils.version.auto>0.3.17</table-utils.version.auto>
@@ -128,8 +128,8 @@
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
-				<artifactId>fiji_plugin_cats</artifactId>
-				<version>${fiji_plugin_cats.version.auto}</version>
+				<artifactId>fiji-plugincats</artifactId>
+				<version>${fiji-plugin-cats.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>
