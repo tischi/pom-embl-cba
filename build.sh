@@ -1,3 +1,4 @@
+cd ../pom-embl-cba/; mvn $@
 cd ../imglib2-lazy-algorithm; mvn $@
 cd ../bdv-utils; mvn $@ 
 cd ../table-utils; mvn $@
