@@ -8,7 +8,7 @@
 	</parent>
 	<groupId>de.embl.cba</groupId>
 	<artifactId>pom-embl-cba</artifactId>
-	<version>0.3.9</version>
+	<version>0.3.10</version>
 	<packaging>pom</packaging>
 	<name>EMBL CBA Parent Pom</name>
 	<url>https://github.com/tischi/pom-embl-cba</url>
@@ -67,21 +67,21 @@
 		<license.copyrightOwners>EMBL</license.copyrightOwners>
 		<!-- EMBL-CBA: latest versions are auto-fetched from projects, running /update_pom.py -->
 		<fiji-plugin-plateViewer.version.auto>0.2.23</fiji-plugin-plateViewer.version.auto>
-		<fiji-plugin-platynereisViewer.version.auto>0.5.5</fiji-plugin-platynereisViewer.version.auto>
+		<fiji-plugin-platynereisViewer.version.auto>0.5.8</fiji-plugin-platynereisViewer.version.auto>
 		<fiji-plugin-morphometry.version.auto>0.5.0</fiji-plugin-morphometry.version.auto>
-		<fiji-plugin-bigDataProcessor.version.auto>0.7.0</fiji-plugin-bigDataProcessor.version.auto>
-		<fiji-plugin-bigDataProcessor2.version.auto>0.3.7</fiji-plugin-bigDataProcessor2.version.auto>
-		<fiji-plugin-elastixWrapper.version.auto>0.4.1</fiji-plugin-elastixWrapper.version.auto>
+		<fiji-plugin-bigDataProcessor_.version.auto>0.7.2</fiji-plugin-bigDataProcessor_.version.auto>
+		<fiji-plugin-bigDataProcessor2.version.auto>0.3.9</fiji-plugin-bigDataProcessor2.version.auto>
+		<fiji-plugin-elastixWrapper.version.auto>0.4.3</fiji-plugin-elastixWrapper.version.auto>
 		<fiji-plugin-cats.version.auto>0.7.2</fiji-plugin-cats.version.auto>
 		<fiji-plugin-multiTemplateMatching.version.auto>0.4.0</fiji-plugin-multiTemplateMatching.version.auto>
-		<bdv-utils.version.auto>0.2.19</bdv-utils.version.auto>
-		<table-utils.version.auto>0.3.17</table-utils.version.auto>
+		<bdv-utils.version.auto>0.2.22</bdv-utils.version.auto>
+		<table-utils.version.auto>0.3.19</table-utils.version.auto>
 		<transforms-utils.version.auto>0.2.01</transforms-utils.version.auto>
-		<image-transform-converters.version.auto>0.1.00</image-transform-converters.version.auto>
+		<image-transform-converters.version.auto>0.1.1</image-transform-converters.version.auto>
 		<classifiers.version.auto>0.2.0</classifiers.version.auto>
 		<imglib2-lazy-algorithm.version.auto>0.2.0</imglib2-lazy-algorithm.version.auto>
-		<imaris-writer.version.auto>0.2.0</imaris-writer.version.auto>
-		<fiji-slurm.version.auto>0.5.00</fiji-slurm.version.auto>
+		<imaris-writer.version.auto>0.2.1</imaris-writer.version.auto>
+		<fiji-slurm.version.auto>0.6.0</fiji-slurm.version.auto>
 		<!-- Manually managed versions -->
 		<bigdataviewer-vistools.version>1.0.0-beta-18-SNAPSHOT</bigdataviewer-vistools.version>
 		<bigdataviewer-core.version>7.0.1-SNAPSHOT</bigdataviewer-core.version>
@@ -110,11 +110,6 @@
 				<groupId>de.embl.cba</groupId>
 				<artifactId>fiji-plugin-bigDataProcessor2</artifactId>
 				<version>${fiji-plugin-bigDataProcessor2.version.auto}</version>
-			</dependency>
-			<dependency>
-				<groupId>de.embl.cba</groupId>
-				<artifactId>fiji-plugin-bigDataProcessor</artifactId>
-				<version>${fiji-plugin-bigDataProcessor.version.auto}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.embl.cba</groupId>

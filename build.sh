@@ -12,6 +12,6 @@ cd ../fiji-plugin-plateViewer; mvn $@
 cd ../fiji-plugin-platynereisViewer; mvn $@
 cd ../fiji-plugin-morphometry; mvn $@
 cd ../fiji-plugin-bigDataProcessor2; mvn $@
-cd ../fiji_plugin_bigDataProcessor; mvn $@
+cd ../fiji-plugin-bigDataProcessor; mvn $@
 
 cd ../pom-embl-cba
